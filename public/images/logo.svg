@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" fill="none">
+  <!-- Stylized A shape with infinity loops -->
+  <path d="M60 10 C35 10 15 35 15 60 C15 80 30 92 45 95 C52 97 58 95 62 90 L60 85 L58 90 C62 95 68 97 75 95 C90 92 105 80 105 60 C105 35 85 10 60 10 Z M60 22 C78 22 92 40 92 58 C92 74 82 83 72 85 C68 86 64 85 62 82 L60 78 L58 82 C56 85 52 86 48 85 C38 83 28 74 28 58 C28 40 42 22 60 22 Z" fill="currentColor"/>
+  <!-- Infinity loops -->
+  <ellipse cx="38" cy="88" rx="18" ry="12" stroke="currentColor" stroke-width="6" fill="none"/>
+  <ellipse cx="82" cy="88" rx="18" ry="12" stroke="currentColor" stroke-width="6" fill="none"/>
+  <!-- Connecting curve -->
+  <path d="M56 88 Q60 98 64 88" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>
