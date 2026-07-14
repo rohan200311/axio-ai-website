@@ -31,3 +31,5 @@ yarn-error.log*
 
 # Vite cache
 .vite/
+
+.vercel
