@@ -8,25 +8,36 @@ import CTA from "../components/home/CTA";
 export default function Pricing() {
   return (
     <>
-      <section className="relative overflow-hidden pt-32 pb-12 sm:pt-40">
-        <div className="absolute inset-0 bg-gradient-to-b from-violet-50 via-cream to-cream dark:from-violet-950/30 dark:via-zinc-950 dark:to-zinc-950" />
-        <div className="relative z-10 mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <ScrollReveal>
-            <p className="text-sm font-semibold uppercase tracking-wider text-violet-600 dark:text-violet-400">
-              Pricing
-            </p>
-            <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-white">
-              Engagement models that match your stage
-            </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-600 dark:text-zinc-400">
-              Every engagement is scoped to outcomes — not hours. Tell us what
-              you&apos;re building and we&apos;ll recommend Spark, Studio, or Labs.
-            </p>
-          </ScrollReveal>
-        </div>
-      </section>
+      {/* Background container for header + pricing cards */}
+      <div className="relative">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/pricing-bg.png')" }}
+        />
+        {/* Semi-transparent overlay for text readability */}
+        <div className="absolute inset-0 bg-white/70 dark:bg-zinc-950/70" />
 
-      <MorphSection className="pb-24 pt-8">
+        {/* Header section */}
+        <section className="relative z-10 pt-32 pb-12 sm:pt-40">
+          <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+            <ScrollReveal>
+              <p className="text-sm font-semibold uppercase tracking-wider text-violet-600 dark:text-violet-400">
+                Pricing
+              </p>
+              <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-white">
+                Engagement models that match your stage
+              </h1>
+              <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-600 dark:text-zinc-400">
+                Every engagement is scoped to outcomes — not hours. Tell us what
+                you&apos;re building and we&apos;ll recommend Spark, Studio, or Labs.
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* Pricing cards section */}
+        <section className="relative z-10 pb-24 pt-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-stretch gap-6 lg:grid-cols-3">
             {pricingPlans.map((plan, i) => (
@@ -90,7 +101,8 @@ export default function Pricing() {
             </p>
           </ScrollReveal>
         </div>
-      </MorphSection>
+      </section>
+      </div>
 
       <CTA />
     </>

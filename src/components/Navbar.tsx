@@ -34,7 +34,7 @@ export default function Navbar() {
           <img
             src="/images/logo.png"
             alt="axio.ai logo"
-            className="h-9 w-9 object-contain transition-transform group-hover:scale-105"
+            className="h-11 w-11 object-contain transition-transform group-hover:scale-105"
           />
           <span className="font-display text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
             {company.name}

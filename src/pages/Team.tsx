@@ -8,36 +8,40 @@ import CTA from "../components/home/CTA";
 export default function Team() {
   return (
     <>
-      <section className="relative overflow-hidden pt-32 pb-16 sm:pt-40">
-        <div className="absolute inset-0">
-          <img
-            src="/images/team-bg.png"
-            alt=""
-            className="h-full w-full object-cover opacity-40 dark:opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-cream/80 via-cream to-cream dark:from-zinc-950/90 dark:via-zinc-950 dark:to-zinc-950" />
-        </div>
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-sky-600 dark:text-sky-400">
-              The team
-            </p>
-            <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-white">
-              Founders who engineer like a full company
-            </h1>
-            <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
-              Five co-founders spanning AI, product, engineering, design, and
-              growth — based in {company.location}, shipping worldwide.
-            </p>
-            <p className="mt-3 inline-flex items-center gap-1.5 text-sm text-zinc-500">
-              <MapPin className="h-4 w-4 text-sky-500" />
-              {company.fullLocation}
-            </p>
-          </ScrollReveal>
-        </div>
-      </section>
+      {/* Background container for header + team cards */}
+      <div className="relative">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/team-bg-new.png')" }}
+        />
+        {/* Semi-transparent overlay for text readability */}
+        <div className="absolute inset-0 bg-white/70 dark:bg-zinc-950/70" />
 
-      <MorphSection className="pb-24">
+        {/* Header section */}
+        <section className="relative z-10 pt-32 pb-16 sm:pt-40">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ScrollReveal className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-semibold uppercase tracking-wider text-sky-600 dark:text-sky-400">
+                The team
+              </p>
+              <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-white">
+                Founders who engineer like a full company
+              </h1>
+              <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+                Five co-founders spanning AI, product, engineering, design, and
+                growth — based in {company.location}, shipping worldwide.
+              </p>
+              <p className="mt-3 inline-flex items-center gap-1.5 text-sm text-zinc-500">
+                <MapPin className="h-4 w-4 text-sky-500" />
+                {company.fullLocation}
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* Team cards section */}
+        <section className="relative z-10 pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {team.map((member, i) => (
@@ -88,7 +92,8 @@ export default function Team() {
             </div>
           </ScrollReveal>
         </div>
-      </MorphSection>
+      </section>
+      </div>
 
       <CTA />
     </>

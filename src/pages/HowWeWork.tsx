@@ -69,34 +69,44 @@ export default function HowWeWork() {
 
   return (
     <>
-      <section className="relative overflow-hidden pt-32 pb-16 sm:pt-40">
-        <div className="absolute inset-0 bg-gradient-to-b from-indigo-50 via-cream to-cream dark:from-indigo-950/40 dark:via-zinc-950 dark:to-zinc-950" />
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
-              How we work
-            </p>
-            <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-white">
-              A clear path from idea to intelligent product
-            </h1>
-            <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
-              Move through each phase of delivery — human specialists and AI
-              systems working together, with you always in control.
-            </p>
-            <div className="mt-8 flex justify-center gap-3">
-              <ButtonLink to="/contact" size="lg">
-                Start your roadmap
-              </ButtonLink>
-              <ButtonLink to="/services" variant="outline" size="lg">
-                View services
-              </ButtonLink>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+      {/* Background container for header + timeline */}
+      <div className="relative">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/howwework-bg.png')" }}
+        />
+        {/* Semi-transparent overlay for text readability */}
+        <div className="absolute inset-0 bg-white/70 dark:bg-zinc-950/70" />
 
-      {/* Morph timeline */}
-      <section className="py-16 sm:py-24" ref={trackRef}>
+        {/* Header section */}
+        <section className="relative z-10 pt-32 pb-16 sm:pt-40">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ScrollReveal className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+                How we work
+              </p>
+              <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-white">
+                A clear path from idea to intelligent product
+              </h1>
+              <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+                Move through each phase of delivery — human specialists and AI
+                systems working together, with you always in control.
+              </p>
+              <div className="mt-8 flex justify-center gap-3">
+                <ButtonLink to="/contact" size="lg">
+                  Start your roadmap
+                </ButtonLink>
+                <ButtonLink to="/services" variant="outline" size="lg">
+                  View services
+                </ButtonLink>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* Morph timeline */}
+        <section className="relative z-10 py-16 sm:py-24" ref={trackRef}>
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <div className="relative">
             <div className="absolute left-6 top-0 h-full w-0.5 bg-zinc-200 dark:bg-zinc-800 sm:left-8" />
@@ -135,6 +145,7 @@ export default function HowWeWork() {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Chapter cards */}
       <MorphSection className="bg-white py-20 dark:bg-zinc-900/30">

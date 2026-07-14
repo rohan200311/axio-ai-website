@@ -35,26 +35,37 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 export default function Services() {
   return (
     <>
-      <section className="relative overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-20">
-        <div className="absolute inset-0 bg-gradient-to-b from-sky-100 via-cream to-cream dark:from-slate-900 dark:via-zinc-950 dark:to-zinc-950" />
+      {/* Background container for header + service cards */}
+      <div className="relative">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/services-bg.png')" }}
+        />
+        {/* Semi-transparent overlay for text readability */}
+        <div className="absolute inset-0 bg-white/70 dark:bg-zinc-950/70" />
         <div className="absolute right-0 top-20 h-72 w-72 animate-morph rounded-full bg-sky-400/20 blur-3xl" />
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-wider text-sky-600 dark:text-sky-400">
-              Services
-            </p>
-            <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-white">
-              Engineering services for modern businesses
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg text-zinc-600 dark:text-zinc-400">
-              Eleven capabilities under one roof — from AI web & app development
-              to infrastructure, security, branding, and growth.
-            </p>
-          </ScrollReveal>
-        </div>
-      </section>
 
-      <MorphSection className="pb-24">
+        {/* Header section */}
+        <section className="relative z-10 pt-32 pb-16 sm:pt-40 sm:pb-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ScrollReveal className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-wider text-sky-600 dark:text-sky-400">
+                Services
+              </p>
+              <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-white">
+                Engineering services for modern businesses
+              </h1>
+              <p className="mt-4 max-w-2xl text-lg text-zinc-600 dark:text-zinc-400">
+                Eleven capabilities under one roof — from AI web & app development
+                to infrastructure, security, branding, and growth.
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* Service cards section */}
+        <section className="relative z-10 pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((s, i) => {
@@ -91,7 +102,8 @@ export default function Services() {
             })}
           </div>
         </div>
-      </MorphSection>
+      </section>
+      </div>
 
       <section className="border-y border-zinc-200 bg-white py-16 dark:border-zinc-800 dark:bg-zinc-900/40">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

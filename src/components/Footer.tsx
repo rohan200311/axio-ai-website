@@ -4,15 +4,22 @@ import { company, navLinks, chapters } from "../data/content";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-zinc-200 bg-cream dark:border-zinc-800 dark:bg-zinc-950">
+    <footer className="relative overflow-hidden border-t border-zinc-200 dark:border-zinc-800">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/footer-bg.png')" }}
+      />
+      {/* Semi-transparent overlay for text readability */}
+      <div className="absolute inset-0 bg-white/80 dark:bg-zinc-950/85" />
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-400/40 to-transparent" />
-      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:px-8 lg:py-20">
+      <div className="relative z-10 mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:px-8 lg:py-20">
         <div className="lg:col-span-4">
           <Link to="/" className="mb-4 inline-flex items-center gap-2.5">
             <img
               src="/images/logo.png"
               alt="axio.ai logo"
-              className="h-9 w-9 object-contain"
+              className="h-11 w-11 object-contain"
             />
             <span className="font-display text-lg font-semibold text-zinc-900 dark:text-white">
               {company.name}
@@ -90,7 +97,7 @@ export default function Footer() {
         <div className="lg:col-span-3">
           <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
             <img
-              src="/images/sunflower-card.png"
+              src="/images/sunflower-new.png"
               alt="axio.ai creative"
               className="h-36 w-full object-cover"
             />
@@ -103,14 +110,14 @@ export default function Footer() {
                 to="/contact"
                 className="mt-3 inline-flex rounded-full bg-zinc-900 px-3 py-1.5 text-xs font-medium text-white dark:bg-white dark:text-zinc-900"
               >
-                Run a company
+                Start The Project
               </Link>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-zinc-200 dark:border-zinc-800">
+      <div className="relative z-10 border-t border-zinc-200 dark:border-zinc-800">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-zinc-500 sm:flex-row sm:px-6 lg:px-8">
           <p>
             © {new Date().getFullYear()} {company.name} — AI Labs & Software
@@ -127,7 +134,7 @@ export default function Footer() {
 
       {/* Pixel grass footer strip inspired by reference */}
       <div
-        className="h-8 w-full"
+        className="relative z-10 h-8 w-full"
         style={{
           background:
             "repeating-linear-gradient(90deg, #4ade80 0 8px, #22c55e 8px 16px, #16a34a 16px 20px, #4ade80 20px 28px)",

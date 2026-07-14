@@ -7,8 +7,15 @@ import { ButtonLink } from "../Button";
 
 export default function Chapters() {
   return (
-    <MorphSection className="bg-white py-20 dark:bg-zinc-900/40 sm:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <MorphSection className="relative overflow-hidden py-20 sm:py-28">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/chapters-bg.png')" }}
+      />
+      {/* Semi-transparent overlay for text readability */}
+      <div className="absolute inset-0 bg-white/60 dark:bg-zinc-950/60" />
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-white">
             Learn how to build intelligent software

@@ -22,7 +22,13 @@ export default function Contact() {
   return (
     <>
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40">
-        <div className="absolute inset-0 bg-gradient-to-b from-sky-100 via-cream to-cream dark:from-slate-900 dark:via-zinc-950 dark:to-zinc-950" />
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/contact-bg.png')" }}
+        />
+        {/* Semi-transparent overlay for text readability */}
+        <div className="absolute inset-0 bg-white/70 dark:bg-zinc-950/70" />
         <div className="absolute -right-20 top-40 h-80 w-80 animate-morph rounded-full bg-indigo-400/15 blur-3xl" />
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -86,7 +92,7 @@ export default function Contact() {
 
               <div className="mt-10 overflow-hidden rounded-2xl border border-zinc-200 shadow-lg dark:border-zinc-700">
                 <img
-                  src="/images/hero-landscape.png"
+                  src="/images/contact-landscape.png"
                   alt="axio studio"
                   className="aspect-[16/10] w-full object-cover"
                 />
