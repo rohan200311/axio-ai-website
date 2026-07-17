@@ -98,7 +98,7 @@ export default function Contact() {
               <div className="mt-10 overflow-hidden rounded-2xl border border-zinc-200 shadow-lg dark:border-zinc-700">
                 <img
                   src="/images/contact-landscape.png"
-                  alt="axio studio"
+                  alt="mirai studio"
                   className="aspect-[16/10] w-full object-cover"
                 />
               </div>
@@ -115,7 +115,7 @@ export default function Contact() {
                       Message received
                     </h2>
                     <p className="mt-2 max-w-sm text-sm text-zinc-600 dark:text-zinc-400">
-                      Thanks {form.name || "there"}! The axio.ai team will
+                      Thanks {form.name || "there"}! The mirai.ai team will
                       review your note and get back shortly.
                     </p>
                     <Button

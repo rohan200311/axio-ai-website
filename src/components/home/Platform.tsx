@@ -24,7 +24,7 @@ export default function Platform() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-white">
-            axio.ai is an AI Labs & Software Studios company{" "}
+            mirai.ai is an AI Labs & Software Studios company{" "}
             <span className="text-zinc-500 dark:text-zinc-400">
               built to engineer intelligent systems end to end
             </span>
@@ -78,7 +78,7 @@ export default function Platform() {
                   transition={{ duration: 3, repeat: Infinity }}
                   className="rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-sky-500/30"
                 >
-                  axio.ai
+                  mirai.ai
                 </motion.div>
               </div>
 
@@ -130,7 +130,7 @@ export default function Platform() {
               </div>
               <div className="mt-6">
                 <ButtonLink to="/contact" size="sm" className="w-full">
-                  Ask axio to spin up new sales agents
+                  Ask mirai to spin up new sales agents
                 </ButtonLink>
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function Platform() {
             Bring your product vision into our engineering pipeline and start with
             one concrete task.
           </p>
-          <ButtonLink to="/contact">Start in axio</ButtonLink>
+          <ButtonLink to="/contact">Start in mirai</ButtonLink>
         </ScrollReveal>
       </div>
     </MorphSection>

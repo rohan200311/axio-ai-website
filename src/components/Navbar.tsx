@@ -33,7 +33,7 @@ export default function Navbar() {
         <Link to="/" className="group flex items-center gap-2.5">
           <img
             src="/images/logo.png"
-            alt="axio.ai logo"
+            alt="mirai.ai logo"
             className="h-11 w-11 object-contain transition-transform group-hover:scale-105"
           />
           <span className="font-display text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">

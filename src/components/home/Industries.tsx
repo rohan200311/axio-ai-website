@@ -50,7 +50,7 @@ export default function Industries() {
           </h2>
           <p className="mt-3 text-zinc-600 dark:text-zinc-400">
             From SaaS platforms to fintech, healthtech, and marketplaces —
-            axio builds software that works in the real world.
+            mirai builds software that works in the real world.
           </p>
         </ScrollReveal>
 

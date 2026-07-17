@@ -18,7 +18,7 @@ export default function Footer() {
           <Link to="/" className="mb-4 inline-flex items-center gap-2.5">
             <img
               src="/images/logo.png"
-              alt="axio.ai logo"
+              alt="mirai.ai logo"
               className="h-11 w-11 object-contain"
             />
             <span className="font-display text-lg font-semibold text-zinc-900 dark:text-white">
@@ -98,7 +98,7 @@ export default function Footer() {
           <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
             <img
               src="/images/sunflower-new.png"
-              alt="axio.ai creative"
+              alt="mirai.ai creative"
               className="h-36 w-full object-cover"
             />
             <div className="p-4">

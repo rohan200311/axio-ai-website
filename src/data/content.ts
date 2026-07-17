@@ -1,12 +1,12 @@
 export const company = {
-  name: "axio.ai",
+  name: "mirai.ai",
   tagline: "AI Labs & Software Studios",
   description:
     "We design, build, automate, and optimize intelligent software systems that help businesses operate with more speed, precision, and scale.",
   location: "Hubballi",
   pincode: "580031",
   fullLocation: "Hubballi, Karnataka 580031, India",
-  email: "hello@axio.ai",
+  email: "hello@mirai.ai",
   phone: "+91 836 000 0000",
 };
 
@@ -305,7 +305,7 @@ export const capabilities = [
   {
     title: "Agentic engineering",
     description:
-      "Axio operates as both an AI lab and a software studio — with dedicated departments, technical leads, and shared context across AI, product, and growth.",
+      "Mirai operates as both an AI lab and a software studio — with dedicated departments, technical leads, and shared context across AI, product, and growth.",
   },
   {
     title: "Human in the loop",

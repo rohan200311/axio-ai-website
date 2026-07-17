@@ -19,7 +19,7 @@ const ThemeContext = createContext<ThemeContextValue | null>(null);
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<Theme>(() => {
     if (typeof window === "undefined") return "light";
-    const stored = localStorage.getItem("axio-theme") as Theme | null;
+    const stored = localStorage.getItem("mirai-theme") as Theme | null;
     if (stored === "light" || stored === "dark") return stored;
     return window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
@@ -34,7 +34,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     } else {
       root.classList.remove("dark");
     }
-    localStorage.setItem("axio-theme", theme);
+    localStorage.setItem("mirai-theme", theme);
     const t = window.setTimeout(() => {
       root.classList.remove("theme-transition");
     }, 400);
