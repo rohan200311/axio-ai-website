@@ -25,13 +25,17 @@ export default function Hero() {
       {/* Sky gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-sky-300 via-sky-200 to-emerald-100 dark:from-slate-900 dark:via-slate-800 dark:to-emerald-950" />
 
-      {/* Parallax hero art */}
+      {/* Parallax video background */}
       <motion.div style={{ y: yBg }} className="absolute inset-0">
-        <img
-          src="/images/hero-landscape.png"
-          alt="axio.ai landscape"
-          className="h-full w-full object-cover object-center opacity-95 dark:opacity-60"
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="h-full w-full object-cover object-center"
+        >
+          <source src="/videos/gemini_generated_video_a6bb3de9.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-t from-cream/90 via-transparent to-sky-200/30 dark:from-zinc-950/95 dark:to-slate-900/40" />
       </motion.div>
 

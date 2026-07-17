@@ -22,11 +22,16 @@ export default function Contact() {
   return (
     <>
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40">
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/contact-bg.png')" }}
-        />
+        {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        >
+          <source src="/videos/gemini_generated_video_73fac569.mp4" type="video/mp4" />
+        </video>
         {/* Semi-transparent overlay for text readability */}
         <div className="absolute inset-0 bg-white/70 dark:bg-zinc-950/70" />
         <div className="absolute -right-20 top-40 h-80 w-80 animate-morph rounded-full bg-indigo-400/15 blur-3xl" />
