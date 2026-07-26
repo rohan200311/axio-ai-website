@@ -19,7 +19,7 @@ export default function Footer() {
             <img
               src="/images/logo.png"
               alt="mirai.ai logo"
-              className="h-11 w-11 object-contain"
+              className="h-12 w-12 object-contain"
             />
             <span className="font-display text-lg font-semibold text-zinc-900 dark:text-white">
               {company.name}
