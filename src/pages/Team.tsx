@@ -1,7 +1,6 @@
 import { MapPin } from "lucide-react";
 import { team, company } from "../data/content";
 import ScrollReveal from "../components/ScrollReveal";
-import MorphSection from "../components/MorphSection";
 import { ButtonLink } from "../components/Button";
 import CTA from "../components/home/CTA";
 

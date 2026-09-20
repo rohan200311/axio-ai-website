@@ -152,7 +152,7 @@ export default function HowWeWork() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="mb-12 text-center">
             <h2 className="font-display text-3xl font-bold text-zinc-900 dark:text-white">
-              The mirai playbook
+              The GenZinering playbook
             </h2>
             <p className="mt-2 text-zinc-600 dark:text-zinc-400">
               Four chapters. One continuous operating system.

@@ -1,12 +1,13 @@
 export const company = {
-  name: "mirai.ai",
+  name: "GenZinering",
+  website: "genzinering.com",
   tagline: "AI Labs & Software Studios",
   description:
     "We design, build, automate, and optimize intelligent software systems that help businesses operate with more speed, precision, and scale.",
   location: "Hubballi",
   pincode: "580031",
   fullLocation: "Hubballi, Karnataka 580031, India",
-  email: "hello@mirai.ai",
+  email: "hello@genzinering.com",
   phone: "+91 836 000 0000",
 };
 
@@ -305,7 +306,7 @@ export const capabilities = [
   {
     title: "Agentic engineering",
     description:
-      "Mirai operates as both an AI lab and a software studio — with dedicated departments, technical leads, and shared context across AI, product, and growth.",
+      "GenZinering operates as both an AI lab and a software studio — with dedicated departments, technical leads, and shared context across AI, product, and growth.",
   },
   {
     title: "Human in the loop",

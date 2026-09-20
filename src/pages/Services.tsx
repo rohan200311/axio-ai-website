@@ -14,7 +14,6 @@ import {
 } from "lucide-react";
 import { services } from "../data/content";
 import ScrollReveal from "../components/ScrollReveal";
-import MorphSection from "../components/MorphSection";
 import { ButtonLink } from "../components/Button";
 import CTA from "../components/home/CTA";
 
@@ -114,7 +113,7 @@ export default function Services() {
               </h2>
               <p className="mt-3 text-zinc-600 dark:text-zinc-400">
                 Whether you need a single AI feature or a complete SaaS platform,
-                mirai.ai operates as your embedded engineering partner — strategy
+                GenZinering operates as your embedded engineering partner — strategy
                 through production.
               </p>
               <ul className="mt-6 space-y-3">
@@ -138,7 +137,7 @@ export default function Services() {
               <div className="relative overflow-hidden rounded-3xl border border-zinc-200 shadow-xl dark:border-zinc-700">
                 <img
                   src="/images/chapter-build.png"
-                  alt="Build with mirai"
+                  alt="Build with GenZinering"
                   className="aspect-[4/3] w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/70 to-transparent" />

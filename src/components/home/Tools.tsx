@@ -67,7 +67,7 @@ export default function Tools() {
                 </label>
                 <div className="mt-1.5 min-h-[100px] rounded-xl border border-zinc-200 bg-zinc-50 p-3 text-sm text-zinc-600 dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
                   Add custom instructions on how the agent should behave, escalate,
-                  and report back to the mirai studio.
+                  and report back to the GenZinering studio.
                 </div>
               </div>
               <div className="p-6">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Mail } from "lucide-react";
+import { MapPin, Mail, Globe } from "lucide-react";
 import { company, navLinks, chapters } from "../data/content";
 
 export default function Footer() {
@@ -18,7 +18,7 @@ export default function Footer() {
           <Link to="/" className="mb-4 inline-flex items-center gap-2.5">
             <img
               src="/images/logo.png"
-              alt="mirai.ai logo"
+              alt="GenZinering logo"
               className="h-16 w-16 object-contain"
             />
             <span className="font-display text-lg font-semibold text-zinc-900 dark:text-white">
@@ -37,6 +37,10 @@ export default function Footer() {
             <p className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-sky-500" />
               {company.email}
+            </p>
+            <p className="flex items-center gap-2">
+              <Globe className="h-4 w-4 text-sky-500" />
+              {company.website}
             </p>
           </div>
         </div>
@@ -98,7 +102,7 @@ export default function Footer() {
           <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
             <img
               src="/images/sunflower-new.png"
-              alt="mirai.ai creative"
+              alt="GenZinering creative"
               className="h-36 w-full object-cover"
             />
             <div className="p-4">
