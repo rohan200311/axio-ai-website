@@ -21,7 +21,7 @@ export default function Chapters() {
             Learn how to build intelligent software
           </h2>
           <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-            Read the guide, then let mirai.ai turn each step into a roadmap,
+            Read the guide, then let GenZinering turn each step into a roadmap,
             tasks, and delivery squads.
           </p>
           <div className="mt-6">

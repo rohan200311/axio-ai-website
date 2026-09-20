@@ -50,7 +50,7 @@ function Visual({ type }: { type: string }) {
         <div className="w-40 rounded-2xl border border-zinc-200 bg-white p-3 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
           <p className="text-[10px] font-medium text-zinc-400">Engineer</p>
           <p className="mt-2 text-xs font-semibold text-zinc-800 dark:text-zinc-100">
-            Create a new task for mirai
+            Create a new task for GenZinering
           </p>
           <div className="mt-4 flex items-center gap-1 rounded-lg border border-zinc-200 px-2 py-1.5 dark:border-zinc-600">
             <span className="flex-1 text-[10px] text-zinc-400">
@@ -75,12 +75,12 @@ function Visual({ type }: { type: string }) {
           <p className="text-zinc-400">
             Subject:{" "}
             <span className="text-zinc-700 dark:text-zinc-200">
-              Thought you could use mirai for Acme
+              Thought you could use GenZinering for Acme
             </span>
           </p>
           <div className="mt-2 rounded-lg bg-zinc-50 p-3 leading-relaxed text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
             Hey Sarah — we&apos;ve been following how quickly your team has been
-            shipping. At mirai, we build AI systems that unify product and growth…
+            shipping. At GenZinering, we build AI systems that unify product and growth…
           </div>
         </div>
       </div>
@@ -171,7 +171,7 @@ export default function Process() {
                           Learn how
                         </ButtonLink>
                         <ButtonLink to="/contact" variant="outline" size="sm">
-                          Run this in mirai
+                          Run this with GenZinering
                         </ButtonLink>
                       </div>
                     </div>

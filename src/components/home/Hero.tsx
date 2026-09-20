@@ -80,7 +80,7 @@ export default function Hero() {
           </div>
 
           <h1 className="font-display text-4xl font-bold leading-[1.1] tracking-tight text-zinc-900 sm:text-5xl md:text-6xl lg:text-[3.75rem] dark:text-white">
-            {company.name.split(".")[0]} designs, builds, and automates{" "}
+            {company.name} designs, builds, and automates{" "}
             <span className="bg-gradient-to-r from-sky-600 to-indigo-600 bg-clip-text text-transparent dark:from-sky-400 dark:to-indigo-400">
               intelligent software
             </span>
